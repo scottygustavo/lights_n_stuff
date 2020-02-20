@@ -86,12 +86,12 @@ void changeColors(char command[]) {
   char r[] = "00";
   char g[] = "00";
   char b[] = "00";
-  r[0] = command[1];
-  r[1] = command[2];
-  g[0] = command[3];
-  g[1] = command[4];
-  b[0] = command[5];
-  b[1] = command[6];
+  r[0] = command[0];
+  r[1] = command[1];
+  g[0] = command[2];
+  g[1] = command[3];
+  b[0] = command[4];
+  b[1] = command[5];
   long int red, blue, green;
   red = strtol (r,NULL,16);
   green = strtol (g,NULL,16);
@@ -101,8 +101,8 @@ void changeColors(char command[]) {
   Serial.println(green);
 
   analogWrite(R_pin, (abs (red - 255)));
-  analogWrite(G_pin, (abs (blue - 255)));
-  analogWrite(B_pin, (abs (green - 255)));
+  analogWrite(G_pin, (abs (green - 255)));
+  analogWrite(B_pin, (abs (blue - 255)));
 
 }
 
