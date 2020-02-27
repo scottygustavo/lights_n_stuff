@@ -7,6 +7,7 @@ Very wordy title to describe what will hopefully be the final implementation of 
       - Generate Grid
       - Send mqtt messages based on grid
   - Adjust the CSS to be scalable with increased number of "pixels"
+  - Incorporate Hex
 
 
 ## Design:
